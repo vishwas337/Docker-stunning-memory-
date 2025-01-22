@@ -1,0 +1,16 @@
+# Use Ubuntu as the base image
+FROM ubuntu:latest
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements file into the container
+COPY requirements.txt /app/
+
+# Update and install necessary packages
+RUN apt-get update && apt-get install -y 
+
+# Expose the necessary port
+EXPOSE 3000
+
+CMD ["echo" ,  "you're doing good keep docker-ing and get better over time"]

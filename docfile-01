@@ -1,0 +1,6 @@
+FROM python:3
+WORKDIR /app
+COPY requirements.txt /app/
+RUN apt-get update && apt get install -y
+EXPOSE 1000
+CMD ["echo", "doing this after bathing datee : 05/11/2024 at 5:34 pm"]

@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+WORKDIR /app
+COPY requirements.txt /app/
+RUN apt-get install && apt-get update -y 
+EXPOSE 2000
+CMD ["echo"," hiiii it's another dayyyy!!!!"]
